@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-display: "Bricolage Grotesque", system-ui, sans-serif;
+  --color-paper: #eef2f7;
+  --color-ink: #0f1b33;
+  --color-cobalt: #2f4bff;
+  --color-line: #cfd8e6;
+}
+
+body { background: var(--color-paper); color: var(--color-ink); font-family: var(--font-sans); }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+
+/* Blueprint grid: hero ka signature */
+.grid-bg {
+  background-image: linear-gradient(var(--color-line) 1px, transparent 1px), linear-gradient(90deg, var(--color-line) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
